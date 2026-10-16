@@ -9,8 +9,8 @@ if errorlevel 1 (
     exit /b 1
 )
 
-echo Installing / updating yt-dlp...
-pip install -q --upgrade yt-dlp
+echo Installing / updating dependencies...
+pip install -q --upgrade yt-dlp curl_cffi
 
 echo Checking FFmpeg...
 ffmpeg -version >nul 2>&1
